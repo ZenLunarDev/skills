@@ -1,0 +1,23 @@
+{
+  "skill_name": "github-portfolio",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a web developer and I want a portfolio site that looks exactly like my GitHub profile page with dark mode. Build me a Vite + React app with a profile sidebar (avatar, name, bio, follower count, Follow button), a Repositories tab with 7 mock repo cards showing language color dots, stars, forks, and updated time, plus search and language filtering. Make it responsive and ready to deploy to GitHub Pages.",
+      "expected_output": "A complete Vite + React project using GitHub Dark Default colors (#0d1117, #161b22, #30363d, #c9d1d9, #8b949e, #58a6ff), with a header, profile sidebar, repositories tab with 7 mock repos, working search + language filtering, mobile-responsive layout, vite.config.js base path, and a .github/workflows/deploy.yml for GitHub Pages.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Can you make me a personal page like GitHub's profile? My name is Alex Rivera, username @alexrivera-dev, I'm a Python developer based in Berlin. I have 4 real projects I want to show: django-rest-shop (Python), ml-pipeline-tools (Python), portfolio-api (Go), and data-viz-dashboard (JavaScript). Make it dark theme like GitHub and make sure the repositories tab shows the right language colors. I'll host it on GitHub Pages under the repo 'alexrivera-dev.github.io'.",
+      "expected_output": "A Vite + React GitHub-style portfolio personalized with the given identity (Alex Rivera, @alexrivera-dev, Python developer in Berlin) and exactly the 4 named projects with correct language color dots (Python blue #3572A5, Go teal #00ADD8, JavaScript yellow #f1e05a), dark GitHub theme, and vite base configured for the alexrivera-dev.github.io repo.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I already have a website but I want to add a GitHub-style repository showcase section to it: a grid of repo cards with the GitHub dark look, each card having the repo name, description, a language dot, stars, forks, and last updated time. There should be a search box to filter by name and a dropdown to filter by language. Just give me the component code and the mock data — I'll integrate it into my existing React app myself.",
+      "expected_output": "Reusable React component code (e.g. RepoCard, RepoFilters) plus a mock repositories dataset, styled in GitHub Dark Default colors, with working search and language filter logic, presented as standalone files the user can drop into an existing React app — not a full scaffolded project.",
+      "files": []
+    }
+  ]
+}
