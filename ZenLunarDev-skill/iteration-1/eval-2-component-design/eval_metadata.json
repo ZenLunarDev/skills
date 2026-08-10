@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "component-design",
+  "prompt": "Build me a React user profile card component with a modern dark theme. Use TypeScript, make it performant, and style it with our signature glassmorphism + neumorphism depth layering style. The card should show an avatar, user name, role, and a 'Contact' button with hover animation.",
+  "assertions": []
+}

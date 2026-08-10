@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "security-scan",
+  "prompt": "I have a React component that fetches user data from an API and displays it. Here's the code: [provide a sample component with dangerouslySetInnerHTML, no CSRF protection, inline functions in JSX, and an exposed API key in env]. Please review it for security vulnerabilities and performance issues.",
+  "assertions": []
+}

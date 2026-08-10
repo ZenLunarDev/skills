@@ -1,0 +1,12 @@
+{
+  "run_id": "eval-3-security-scan-with_skill",
+  "eval_name": "security-scan",
+  "expectations": [
+    {"text": "Identifies XSS via dangerouslySetInnerHTML", "passed": true, "evidence": "SECURITY_SCAN_REPORT.md item #1: 'XSS via dangerouslySetInnerHTML' at line 48"},
+    {"text": "Identifies exposed API key or secret", "passed": true, "evidence": "SECURITY_SCAN_REPORT.md item #2: 'Exposed API Key in Source Code' at line 3"},
+    {"text": "Identifies CSRF vulnerability", "passed": true, "evidence": "SECURITY_SCAN_REPORT.md item #3: 'CSRF Vulnerability' at lines 24, 36"},
+    {"text": "Identifies inline function re-render issue", "passed": true, "evidence": "SECURITY_SCAN_REPORT.md item #4: 'Inline Functions in JSX' at lines 54-55"},
+    {"text": "Uses specified report format (Name, Severity, Location, Impact, Fix Options)", "passed": true, "evidence": "SECURITY_SCAN_REPORT.md follows exact format: Name, Severity, Location, Impact, Fix Options for each finding"},
+    {"text": "Waits for approval before implementing fixes", "passed": true, "evidence": "Report ends with 'No fixes applied — awaiting approval as specified in the skill workflow'"}
+  ]
+}

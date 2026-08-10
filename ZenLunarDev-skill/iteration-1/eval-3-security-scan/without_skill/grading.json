@@ -1,0 +1,12 @@
+{
+  "run_id": "eval-3-security-scan-without_skill",
+  "eval_name": "security-scan",
+  "expectations": [
+    {"text": "Identifies XSS via dangerouslySetInnerHTML", "passed": true, "evidence": "security-review.md item #2: 'dangerouslySetInnerHTML Without Sanitization'"},
+    {"text": "Identifies exposed API key or secret", "passed": true, "evidence": "security-review.md item #1: 'Exposed API Key in Environment Variable'"},
+    {"text": "Identifies CSRF vulnerability", "passed": true, "evidence": "security-review.md item #3: 'No CSRF Protection'"},
+    {"text": "Identifies inline function re-render issue", "passed": true, "evidence": "security-review.md item #1 under Performance: 'Inline Arrow Functions in JSX'"},
+    {"text": "Uses specified report format (Name, Severity, Location, Impact, Fix Options)", "passed": false, "evidence": "security-review.md uses a different format: Issue, Location, Impact, Recommendation — not the exact Name/Severity/Location/Impact/Fix Options format"},
+    {"text": "Waits for approval before implementing fixes", "passed": false, "evidence": "Baseline provided recommendations but did not explicitly wait for user approval before fixing"}
+  ]
+}

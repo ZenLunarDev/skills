@@ -1,0 +1,44 @@
+{
+  "skill_name": "ZenLunarDev-skill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to build a new React SaaS dashboard for a B2B analytics platform. The target audience is mid-level managers at tech companies who need clean data visualization. We need real-time updates via WebSocket, and the design should feel modern and professional. Can you help me get started?",
+      "expected_output": "Asks the 5 starter questions, proposes a feature-based or layer-based project structure tailored to a SaaS dashboard, and explains how the signature design style (dynamic grid, depth layering, color philosophy) would apply to an analytics dashboard.",
+      "files": [],
+      "assertions": [
+        {"id": "a1", "text": "Asks all 5 starter questions (purpose, audience, animation/real-time, APIs, design feeling)", "type": "text_check"},
+        {"id": "a2", "text": "Proposes a project structure (feature-based or layer-based)", "type": "text_check"},
+        {"id": "a3", "text": "Mentions signature design principles (depth layering, dynamic grid, color philosophy, or motion with purpose)", "type": "text_check"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Build me a React user profile card component with a modern dark theme. Use TypeScript, make it performant, and style it with our signature glassmorphism + neumorphism depth layering style. The card should show an avatar, user name, role, and a 'Contact' button with hover animation.",
+      "expected_output": "A Functional Component + TypeScript component with custom hooks if needed, memoization applied where appropriate, signature styling with backdrop-filter and box-shadow layering, Framer Motion for the hover state, and a clear 1-primary + neutral + 1-accent color scheme. No Material Design or Tailwind UI templates.",
+      "files": [],
+      "assertions": [
+        {"id": "a1", "text": "Uses TypeScript (typed props or interfaces)", "type": "text_check"},
+        {"id": "a2", "text": "Uses React.memo or memoization", "type": "text_check"},
+        {"id": "a3", "text": "Uses useCallback or useMemo for performance", "type": "text_check"},
+        {"id": "a4", "text": "Includes glassmorphism/neumorphism styling (backdrop-filter, box-shadow, or layered depth)", "type": "text_check"},
+        {"id": "a5", "text": "Has hover animation (Framer Motion or CSS transition)", "type": "text_check"},
+        {"id": "a6", "text": "No Material Design or Tailwind UI template patterns", "type": "negative_check"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I have a React component that fetches user data from an API and displays it. Here's the code: [provide a sample component with dangerouslySetInnerHTML, no CSRF protection, inline functions in JSX, and an exposed API key in env]. Please review it for security vulnerabilities and performance issues.",
+      "expected_output": "Performs a Security Vulnerability Scan finding XSS (dangerouslySetInnerHTML), exposed secrets, CSRF issues, inline function re-renders, and other problems. Reports findings in the specified format (Name, Severity, Location, Impact, Fix Options) and waits for approval before fixing.",
+      "files": [],
+      "assertions": [
+        {"id": "a1", "text": "Identifies XSS via dangerouslySetInnerHTML", "type": "text_check"},
+        {"id": "a2", "text": "Identifies exposed API key or secret", "type": "text_check"},
+        {"id": "a3", "text": "Identifies CSRF vulnerability", "type": "text_check"},
+        {"id": "a4", "text": "Identifies inline function re-render issue", "type": "text_check"},
+        {"id": "a5", "text": "Uses specified report format (Name, Severity, Location, Impact, Fix Options)", "type": "text_check"},
+        {"id": "a6", "text": "Waits for approval before implementing fixes", "type": "text_check"}
+      ]
+    }
+  ]
+}

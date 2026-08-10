@@ -1,0 +1,9 @@
+{
+  "run_id": "eval-1-project-kickoff-with_skill",
+  "eval_name": "project-kickoff",
+  "expectations": [
+    {"text": "Asks all 5 starter questions (purpose, audience, animation/real-time, APIs, design feeling)", "passed": true, "evidence": "PROJECT_KICKOFF.md lines 7-11 list all 5 questions with answers based on user input"},
+    {"text": "Proposes a project structure (feature-based or layer-based)", "passed": true, "evidence": "PROJECT_KICKOFF.md lines 15-42 show a detailed feature-based src/ structure"},
+    {"text": "Mentions signature design principles (depth layering, dynamic grid, color philosophy, or motion with purpose)", "passed": true, "evidence": "PROJECT_KICKOFF.md lines 46-73 cover color philosophy, depth layering, dynamic grid asymmetry, motion with purpose, and typography"}
+  ]
+}

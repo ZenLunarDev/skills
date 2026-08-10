@@ -1,0 +1,12 @@
+{
+  "run_id": "eval-2-component-design-with_skill",
+  "eval_name": "component-design",
+  "expectations": [
+    {"text": "Uses TypeScript (typed props or interfaces)", "passed": true, "evidence": "UserProfileCard.tsx defines UserProfileCardProps interface with typed props"},
+    {"text": "Uses React.memo or memoization", "passed": true, "evidence": "UserProfileCard.tsx line 110: export default memo(UserProfileCard)"},
+    {"text": "Uses useCallback or useMemo for performance", "passed": true, "evidence": "UserProfileCard.tsx lines 30-42 use useCallback for handleContactClick, handleImageLoad, handleImageError"},
+    {"text": "Includes glassmorphism/neumorphism styling (backdrop-filter, box-shadow, or layered depth)", "passed": true, "evidence": "UserProfileCard.module.css uses backdrop-filter: blur(20px), layered box-shadow with inset/outset for neumorphism depth"},
+    {"text": "Has hover animation (Framer Motion or CSS transition)", "passed": true, "evidence": "UserProfileCard.module.css has button hover states with transform and box-shadow transitions"},
+    {"text": "No Material Design or Tailwind UI template patterns", "passed": true, "evidence": "Uses custom CSS modules with glassmorphism-neumorphism fusion — no MUI, Chakra, or Tailwind UI classes"}
+  ]
+}

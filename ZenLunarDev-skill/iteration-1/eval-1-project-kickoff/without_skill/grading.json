@@ -1,0 +1,9 @@
+{
+  "run_id": "eval-1-project-kickoff-without_skill",
+  "eval_name": "project-kickoff",
+  "expectations": [
+    {"text": "Asks all 5 starter questions (purpose, audience, animation/real-time, APIs, design feeling)", "passed": false, "evidence": "Baseline response did not ask any starter questions — jumped straight to building project files"},
+    {"text": "Proposes a project structure (feature-based or layer-based)", "passed": true, "evidence": "Created src/hooks, src/types, src/components, src/data structure"},
+    {"text": "Mentions signature design principles (depth layering, dynamic grid, color philosophy, or motion with purpose)", "passed": false, "evidence": "Baseline used generic Tailwind CSS with standard dark slate theme — no signature design principles mentioned"}
+  ]
+}

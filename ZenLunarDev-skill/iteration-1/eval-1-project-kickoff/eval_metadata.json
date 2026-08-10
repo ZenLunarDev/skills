@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "project-kickoff",
+  "prompt": "I want to build a new React SaaS dashboard for a B2B analytics platform. The target audience is mid-level managers at tech companies who need clean data visualization. We need real-time updates via WebSocket, and the design should feel modern and professional. Can you help me get started?",
+  "assertions": []
+}
